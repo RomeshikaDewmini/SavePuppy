@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="355dp"
+        android:layout_height="127dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="238dp"
+        android:layout_marginEnd="21dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Score : 0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/highScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="1dp"
+        android:layout_marginTop="637dp"
+        android:text="@string/high_score_0"
+        android:textAlignment="center"
+        android:textColor="#9C9A9A"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="272dp"
+        android:backgroundTint="#00000000"
+        android:text="@string/tap_to_start"
+        android:textColor="#FFFFFF"
+        android:letterSpacing="0.2"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="272dp"
+        android:backgroundTint="#00000000"
+        android:text="@string/contgame"
+        android:textColor="#FFFFFF"
+        android:letterSpacing="0.2"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>
